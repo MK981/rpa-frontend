@@ -1,0 +1,44 @@
+.stat__up-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat__switch {
+    height: 40px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 400px;
+    gap: 10px;
+}
+
+.table {
+    display: flex;
+
+    .table__reports {
+        margin: 30px auto 0;
+        width: 60%;
+        min-height: 200px;
+
+        th {
+            border-bottom: 1px solid rgb(6, 39, 54);
+        }
+        
+        td {
+            text-align: center;
+            //border-right: 1px solid rgb(6, 39, 54);
+            border-bottom: 1px solid rgb(6, 39, 54);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.scen-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .scen-item__main {
+        width: 150px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+
+        &:hover {
+            border: 1px dotted grey;
+        }
+
+        &:hover .scen-item__del{
+            display: block;
+        }
+    }
+
+    .scen-item__del {
+        position: absolute;
+        top:5px;
+        left: 5px;
+        font-size: 10px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.close {
+    display: none;
+}
+

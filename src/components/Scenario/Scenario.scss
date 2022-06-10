@@ -1,0 +1,119 @@
+@mixin conf {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scenario {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+    //border: 1px solid red;
+
+    .scenario__mess {
+        margin: auto;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .scenario__func {
+        height: 100%;
+        width: 20%;
+        border: 1px solid rgb(6, 39, 54);
+        @include conf;
+    }
+
+    .scenario__work {
+        width: 80%;
+        background-color: white;
+        @include conf;
+
+        .scenario__up {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .scenario__start {
+            width: 40px;
+            min-height: 40px;
+            background-color: rgb(0, 128, 0);
+            border-radius: 50%;
+
+            &:hover {
+                background-color: rgba(0, 128, 0, .7);
+                cursor: pointer;
+            }
+
+            &:hover .scenario__start-icon {
+               display: flex;
+            }
+        }
+
+        .scenario__start-icon {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+
+        .scenario__end {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scenario__red {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(165, 12, 12);
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .scenario__clear {
+            font-size: 16px;
+            //height: 30px;
+            width: 100px;
+            margin: 5px 10px 0 0;
+            background-color: white;
+            border: 1px solid black;
+
+            &:hover {
+                cursor: pointer;
+                color: grey;
+            }
+        }
+
+        .scenario__select {
+            height: 30px;
+        }
+    }
+
+    .scenario__title {
+        font-size: 16px;
+        //text-align: center;
+    }
+
+    .scenario__title_black {
+       // width: 100%;
+        color: black;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .scenario__part {
+        font-size: 14px;
+        color: grey;
+    }
+
+    .scenario__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,90 @@
+$secondColor: rgb(6, 39, 54);
+
+.up-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch {
+    height: 40px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+}
+
+.admin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    //align-items: center;
+    margin-top: 40px;
+
+    .admim__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $secondColor;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .admin__title {
+        margin: 0 0 15px 0;
+    }
+
+    .admin__input {
+        border: 1px solid $secondColor;
+        border-radius: 10px;
+        height: 30px;
+        color: white;
+        background-color: rgba(0,0,0,0);
+        margin-bottom: 20px;
+        width: 60%;
+    }
+
+    .admin__group-input {
+        border: 1px solid $secondColor;
+        border-radius: 10px;
+        height: 30px;
+        color: white;
+        background-color: rgba(0,0,0,0);
+        margin: 0 10px 20px 0;
+    }
+
+    .admin__sel {
+        margin-bottom: 20px;
+        height: 35px;
+        border: 0;
+        border-radius:  10px;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid $secondColor;
+        color: white;
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .admin__submit {
+        width: 150px;
+        height: 35px;
+        background: rgba(0,0,0,0);
+        border: 2px solid $secondColor;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
+    }
+
+    .first {
+        margin-top: 10px;
+    }
+}
